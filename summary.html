@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="bg-success" >
+    <div class="container">
+        <div class ="jumbotron jumbotron-fluid text-center" style ="background-image:url('../static/assets/img/rk6.jpg');color:#fff; background-repeat:no-repeat;
+        background-size: 100% 100%;" >
+            <h1 class ="displayed-2 heading mt-2" style="color: red;font-style: italic;">Textify</h1>
+            
+            <p class ="lead1">
+                Retieve the best summary for text..
+            </p>
+        </div>
+      <div class="container" style="display: flex; justify-content:space-around">
+    <p class="original_title col-sm-4">Original Text</p>
+    <p class="summary_title col-sm-4">Summary</p>
+
+</div>
+<div class="container srt">
+    <p class ="originaltxt col-sm-6">{{original_txt}}</p>
+    <div class="container col-sm-6">
+        <p class ="summarytxt ">{{summary}}></p>
+        <button class="btn btn-primary success " type="submit" style="margin-left: 10px;">Word:{{len_summary}}</button>
+    </div>
+    </div> 
+
+<div class="container">
+    <button class="btn btn-primary danger" type="submit">Word:{{len_orig_txt}}</button>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br>
+</body>
+</html>
